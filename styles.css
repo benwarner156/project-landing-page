@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+    margin: 0 auto;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    background-color: rgba(31,41,55,90%);
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 1000;
+    padding: .5rem;
+}
+
+nav ul,
+a:hover,
+a:link,
+a:visited,
+a:active {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    text-wrap: nowrap;
+    color: #cfd2d6;
+    gap: 2rem;
+    padding: .5rem;
+}
+
+.s-one {
+    display: flex;
+    background-color: #1f2937;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 110px 20px 20px 20px;
+    color: #cfd2d6;
+}
+
+.s-one p {
+    max-width: 700px;
+}
+
+.s-one button {
+    display: flex;
+    background-color: #3882F6;
+    border: 0;
+    border-radius: 4px;
+    padding: 3px 15px;
+    margin: 1rem auto;
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+.s-one-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.s-two {
+    margin: 10% auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.s-two h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.s-two .cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cards figure {
+    display: flex;
+    flex-direction: column;
+    padding: .25rem 1rem;
+}
+
+.s-two-img {
+    width: 150px;
+    height: 150px;
+
+}
+
+.s-three {
+
+}
+
+.s-four {
+
+}
+
+@media (max-width: 400px) {
+    .s-two-img {
+        width: 100px;
+        height: 100px;
+    }
+}
