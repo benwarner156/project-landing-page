@@ -25,7 +25,17 @@
             <div>
                 <h1 class="logo">R.I.S.E. Fitness</h1>
                 <p>Meticulously strategize your exercise regimen, nutritional intake, or both. Achieve your fitness goals using our exclusive tools.</p>
-                <button class="s-one-button" name="sign up" value="Sign up">Sign up</button>
+                <button data-open-modal class="s-one-button" name="sign up">Sign up</button>
+                <dialog data-modal class="modal">
+                    <form>
+                        <p>Email</p>
+                            <input type="email" />
+                        <p>Password</p>
+                            <input type="password" />
+                    </form>
+                    <button data-close-modal name="close" formmethod="dialog">Cancel</button>
+                    <button type="submit" name="submit">Submit</button>
+                </dialog>
             </div>
             <div>
                 <img class="s-one-img" loading="lazy" alt="man squatting barbell" src="/imgs/pexels-binyamin-mellish-17840.jpg" />
@@ -77,7 +87,7 @@
                     <p>Sign up for FREE to keep track of all your workouts and more.</p>
                 </div>
                  <div>
-                    <button class="s-four-button" name="sign up" value="sign up">Sign up</button>
+                    <button data-open-modal class="s-four-button" name="sign up">Sign up</button>
                 </div>
             </div>
         </div>
@@ -89,5 +99,7 @@
         </div>
     </footer>
     
+<script src="/script.js"></script>
+
 </body>
 </html>
