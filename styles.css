@@ -6,7 +6,7 @@
 
 body {
     background-color: #FFFFFF;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 header {
@@ -17,13 +17,13 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     flex-wrap: wrap;
 }
 
 .logo {
     color: #F9FAF8;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 1000;
     padding: .5rem;
 }
@@ -45,7 +45,7 @@ a:active {
 
 .s-one {
     display: flex;
-    background-color: #1f2937;
+    background-color: rgb(31, 41, 55, 100%);
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -60,9 +60,9 @@ a:active {
 .s-one button {
     display: flex;
     background-color: #3882F6;
-    border: 0;
+    border-style: none;
     border-radius: 4px;
-    padding: 3px 15px;
+    padding: 5px 25px;
     margin: 1rem auto;
     color: #F9FAF8;
     font-size: 18px;
@@ -87,7 +87,7 @@ a:active {
 
 .s-two .cards {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap;  
 }
 
 .cards figure {
@@ -99,20 +99,91 @@ a:active {
 .s-two-img {
     width: 150px;
     height: 150px;
-
 }
 
 .s-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    min-height: 35vh;
+}
 
+.s-three blockquote{
+    width: 60vw;
+}
+
+.s-three p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.25rem;
+    padding-top: 15px;
+}
+
+.s-three footer {
+    text-align: right;
+    font-weight: 900;
+    padding: 15px 0;
 }
 
 .s-four {
-
+    display: flex;
+    align-items: center;
+    min-height: 40vh;
 }
 
-@media (max-width: 400px) {
+.s-four-container {
+    border-radius: 5px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 5% 10%;
+    max-width: 800px;
+}
+
+.s-four h3 {
+    font-size: 1.5rem;
+}
+
+.s-four-button {
+    background-color: #3882F6;
+    border: 2px solid #F9FAF8;
+    border-radius: 4px;
+    padding: 5px 25px;
+    color: #F9FAF8;
+    font-size: 18px;
+    text-wrap: nowrap;
+    margin: 10px;
+}
+
+.page-footer {
+    background-color: rgb(31, 41, 55, 100%);
+    color: #F9FAF8;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 450px) {
     .s-two-img {
         width: 100px;
         height: 100px;
+    }
+    .s-four-container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .s-four h3 {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .s-two-img {
+        width: 200px;
+        height: 200px;
+        padding: 0 20px;
     }
 }
